@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef } from 'react';
 import { useEffect, useState } from 'react';
@@ -10,9 +11,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 function UserList() {
 
   const [userData, setUserData] = useState([]);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [role, setRole] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [role, setRole] = useState("");
   const [updateName, setUpdateName] = useState("");
   const [updateEmail, setUpdateEmail] = useState("");
   const [updateRole, setUpdateRole] = useState("");
@@ -77,7 +78,7 @@ function UserList() {
   }
 
 
-  // mutliple checkbox 
+  // multiple checkbox 
   const handleCheckbox = (e) => {
     const { value, checked } = e.target;
     if (checked) {
